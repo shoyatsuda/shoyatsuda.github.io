@@ -37,3 +37,114 @@
     </div>
   </body>
 </html>
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+    font-family: YuGothic, "游ゴシック", "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+  background-color: #ddd;
+  font-size: 14px;
+}
+span.red {
+  color: red;
+}
+header {
+  background-image: url("bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 100px;
+}
+#logo {
+  padding: 20px 0;
+  text-align: center;
+}
+#logo img {
+  max-width: 120px;
+  border: 5px solid #fff;
+  border-radius: 100%;
+}
+#logo h1 {
+  letter-spacing: 0.15em;
+  color: #fff;
+  text-shadow: 1px 1px 0px #000;
+}
+nav {
+  text-align: center;
+  background: #fff;
+}
+nav ul li {
+     margin: 0 20px;
+  display: inline-block;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #999;
+  font-weight: bold;
+}
+nav ul li a.selected {
+  color: #000;
+}
+.container {
+  max-width: 800px;
+  margin: -100px auto 0;
+  background-color: #fff;
+}
+section {
+  padding: 30px 20px;
+}
+section h2 {
+  padding: 10px 0 20px 0;
+  text-align: center;
+  letter-spacing: 0.15em;
+}
+footer {
+  padding: 20px 0;
+  font-size: 93%;
+  text-align: center;
+  background-color: #ccc;
+  color: #666;
+}
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>お問い合わせフォーム</title>
+</head>
+<body>
+  <h1>お問い合わせ</h1>
+  <form action="" method="post">
+      <input type="hidden" value="secret_data">
+
+      <label>名前：<input type="text" name="login_name"></label>
+      <div>
+      <label>男<input type="radio" name="gender" value="man"></label>
+      <label>女<input type="radio" name="gender" value="woman"></label>
+    </div>
+    <div>
+      <p>ご用件を選んでください。</p>
+      <label>入塾希望<input type="checkbox" name="hobby" value="1"></label>
+      <label>質問<input type="checkbox" name="hobby" value="2"></label>
+      <label>資料請求<input type="checkbox" name="hobby" value="3"></label>
+    </div>
+    <div>
+      <p>ご住所</p>
+      <select name="select1">
+        <option value="1">愛知県（名古屋市内）</option>
+        <option value="2">愛知県（名古屋市を除く）</option>
+        <option value="3">岐阜県</option>
+        <option value="4">三重県</option>
+        <option value="5">その他</option>
+        
+      </select>
+    </div>
+     <div>
+      <p>お問い合わせ内容を400字以内で記述してください。</p>
+      <textarea name="opinion" cols="40" rows="10" maxlength="400"
+        placeholder="ご意見を入力してください。"></textarea>
+    </div>
+   <input type="submit" value="送信">
+  </form>
+</body>
+</html>
